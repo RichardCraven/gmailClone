@@ -1,0 +1,57 @@
+@import '../styles/variables.scss';
+
+.ComposePanel{
+    position: absolute;
+    height: 500px;
+    width: 500px;
+    bottom: 0;
+    right: 50px;
+    border: 1px solid grey;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    .headline{
+        background-color: $themeColor;
+        height: 40px;
+        color: white;
+        padding-left: 20px;
+        line-height: 40px;
+        font-size: 18px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    .recipients-container, .subject-container{
+        width: 100%;
+        outline: none;
+        input {
+            width: 100%; 
+            height: 30px;
+            padding: 0px;
+            margin: 0px;
+            border: 1px solid black;
+            border-right: 0px;
+            border-left: 0px;
+            padding-left: 10px;
+            box-sizing: border-box;
+            outline: none;
+        }
+        &.subject-container{
+            input{
+                border-top: 0px;
+            }
+        }
+    }
+    .main-text-container{
+        height: 100%;
+        textarea{
+            padding: 10px;
+            outline: none;
+            height: 100%;
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+        }
+    }
+}

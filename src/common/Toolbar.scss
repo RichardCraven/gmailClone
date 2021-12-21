@@ -1,0 +1,30 @@
+@import '../styles/variables.scss';
+
+.Toolbar{
+    width: 100vw;
+    background-color: $themeColor;
+    height: 50px;
+    // text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .title-container{
+        width: $sidePanelWidth;
+        .title{
+            padding-left: 25px;
+            color: white;
+            line-height: 50px;
+            font-size: 20px;
+            margin-right: 50px;
+        }
+    }
+    .search-field{
+        height: 40px;
+        input{
+            height: 30px;
+            width: 400px;
+            border-radius: 5px;
+            padding-left: 15px;
+        }
+    }
+}

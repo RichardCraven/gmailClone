@@ -1,0 +1,28 @@
+@import '../styles/variables.scss';
+.MessageView{
+    // padding: 25px;
+    width: calc(100vw - #{$sidePanelWidth});
+    .header{
+        
+        height: 40px;
+        border-bottom: 1px solid slategray;
+        line-height: 40px;
+        padding-left: 20px;
+    }
+    .message-content{
+        padding: 20px;
+    }
+    .back-button{
+        border-radius: 30px;
+        height: 30px;
+        width: 30px;
+        background-color: white;
+        margin-right: 15px;
+        cursor: pointer;
+        border-style: none;
+        border: 1px solid grey;
+        &:hover{
+            background-color: rgba(211, 211, 211, 0.514);
+        }
+    }
+}

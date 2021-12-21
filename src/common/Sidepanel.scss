@@ -1,0 +1,37 @@
+@import '../styles/variables.scss';
+
+.Sidepanel{
+    height: calc(100vh - #{$toolbarHeight});
+    width: $sidePanelWidth;
+    border-right: 1px solid slategray;
+    // padding-top: 20px;
+    align-items: center;
+    // padding-left: 25px;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+    .folders-container{
+        width: 100%;
+    }
+    .compose-button{
+        height: 40px;
+        width: 150px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 20px 0px;
+    }
+    .side-panel-line-item{
+        height: 40px;
+        
+        border: 1px solid lightgrey;
+        padding-left: 20px;
+        line-height: 40px;
+        cursor: pointer;
+        &:hover{
+            background-color: rgba(211, 211, 211, 0.473);
+        }
+        &.selected{
+            background-color: rgba(211, 211, 211, 0.838);
+        }
+    }
+}

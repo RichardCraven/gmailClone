@@ -1,0 +1,30 @@
+@import '../styles/variables.scss';
+.TrashView{
+    width: calc(100vw - #{$sidePanelWidth});
+    .header {
+        height: 40px;
+        width: 100%;
+        line-height: 40px;
+        padding-left: 20px;
+    }
+    .line-items-container{
+        .line-item{
+            height: 40px;
+            width: 100%;
+            border: 1px solid grey;
+            display: flex;
+            align-items: center;
+            padding-left: 5px;
+            cursor: pointer;
+            .checkbox{
+                margin-right: 10px;
+            }
+            &:hover{
+                box-shadow: 1px 1px 1px;
+            }
+            &.read{
+                background-color: lightgrey;
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+.App {
+    width: 100vw;
+    overflow: hidden;
+  .main-content-container{
+    display: flex;
+    flex-direction: row;
+  }
+}
